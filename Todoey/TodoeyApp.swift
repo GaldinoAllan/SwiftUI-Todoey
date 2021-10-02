@@ -12,7 +12,7 @@ struct TodoeyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(DataStoreViewModel())
+                .environmentObject(DataStore())
         }
     }
 }

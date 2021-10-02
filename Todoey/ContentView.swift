@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var dataStoreViewModel: DataStoreViewModel
+    @EnvironmentObject var dataStore: DataStore
+    @State private var modalType: ModalType? = nil
+
     var body: some View {
         NavigationView {
             List() {
-                ForEach(dataStoreViewModel.toDos) { toDo in
+                ForEach(dataStore.toDos) { toDo in
                     Button {
-
+                        modalType = .update(toDo)
                     } label: {
                         Text(toDo.name)
                             .font(.title3)
@@ -32,19 +34,20 @@ struct ContentView: View {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
-
+                        modalType = .new
                     } label: {
                         Image(systemName: "plus.circle.fill")
                     }
                 }
             }
         }
+        .sheet(item: $modalType) { $0 }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(DataStoreViewModel())
+            .environmentObject(DataStore())
     }
 }

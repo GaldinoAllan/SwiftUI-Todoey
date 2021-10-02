@@ -1,5 +1,5 @@
 //
-//  DataStoreViewModel.swift
+//  DataStore.swift
 //  Todoey
 //
 //  Created by allan galdino on 02/10/21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class DataStoreViewModel: ObservableObject {
+class DataStore: ObservableObject {
     @Published var toDos: [ToDo] = []
 
     init() {
