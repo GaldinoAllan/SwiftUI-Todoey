@@ -104,13 +104,10 @@
 		9D6786D82708D08200B63802 /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
+				9D67870F2708DC3F00B63802 /* Views */,
 				9D6786D92708D08200B63802 /* TodoeyApp.swift */,
-				9D6786DB2708D08200B63802 /* ContentView.swift */,
-				9D67870B2708D5F300B63802 /* ToDoFormView.swift */,
-				9D6787072708D41200B63802 /* ToDoFormViewModel.swift */,
-				9D6787032708D0C500B63802 /* ToDoModel.swift */,
-				9D67870D2708D8CA00B63802 /* ModalType.swift */,
-				9D6787052708D18000B63802 /* DataStore.swift */,
+				9D6787102708DC4300B63802 /* Models */,
+				9D6787112708DC4600B63802 /* ViewModels */,
 				9D6786DD2708D08300B63802 /* Assets.xcassets */,
 				9D6786DF2708D08300B63802 /* Preview Content */,
 			);
@@ -140,6 +137,33 @@
 				9D6786F62708D08400B63802 /* TodoeyUITestsLaunchTests.swift */,
 			);
 			path = TodoeyUITests;
+			sourceTree = "<group>";
+		};
+		9D67870F2708DC3F00B63802 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D6786DB2708D08200B63802 /* ContentView.swift */,
+				9D67870B2708D5F300B63802 /* ToDoFormView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D6787102708DC4300B63802 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D67870D2708D8CA00B63802 /* ModalType.swift */,
+				9D6787032708D0C500B63802 /* ToDoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D6787112708DC4600B63802 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9D6787052708D18000B63802 /* DataStore.swift */,
+				9D6787072708D41200B63802 /* ToDoFormViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
