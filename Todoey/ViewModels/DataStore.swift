@@ -9,9 +9,10 @@ import Foundation
 
 class DataStore: ObservableObject {
     @Published var toDos: [ToDo] = []
+    @Published var appError: ErrorType? = nil
 
     init() {
-        print(FileManager.docDirURL.path)
+        print(FileManager.docDirURL.path) /// printing path to see where the ToDos are being saved
         if FileManager().docExists(named: fileName) {
             loadToDos()
         }
@@ -41,27 +42,26 @@ class DataStore: ObservableObject {
                 do {
                     toDos = try decoder.decode([ToDo].self, from: data)
                 } catch {
-                    print(error.localizedDescription)
+                    appError = ErrorType(error: .decodingError)
                 }
             case .failure(let error):
-                print(error.localizedDescription)
+                appError = ErrorType(error: error)
             }
         }
     }
 
     func saveToDos() {
         print("Saving ToDos to file system")
-
         let encoder = JSONEncoder()
         do {
             let data = try encoder.encode(toDos)
             let jsonString = String(decoding: data, as: UTF8.self)
             FileManager().saveDocument(contents: jsonString, docName: fileName) { error in
                 guard let error = error else { return }
-                print(error.localizedDescription)
+                appError = ErrorType(error: error)
             }
         } catch {
-            print(error.localizedDescription)
+            appError = ErrorType(error: .encodingError)
         }
     }
 }
