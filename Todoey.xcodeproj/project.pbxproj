@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0217F2270B99E0002B6F55 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0217F1270B99E0002B6F55 /* FileManager+Extension.swift */; };
 		9D6786DA2708D08200B63802 /* TodoeyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786D92708D08200B63802 /* TodoeyApp.swift */; };
 		9D6786DC2708D08200B63802 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786DB2708D08200B63802 /* ContentView.swift */; };
 		9D6786DE2708D08300B63802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6786DD2708D08300B63802 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 		9D6787082708D41200B63802 /* ToDoFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6787072708D41200B63802 /* ToDoFormViewModel.swift */; };
 		9D67870C2708D5F300B63802 /* ToDoFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67870B2708D5F300B63802 /* ToDoFormView.swift */; };
 		9D67870E2708D8CA00B63802 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D67870D2708D8CA00B63802 /* ModalType.swift */; };
+		9DD715B5270D29BE0073FDEA /* ToDoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD715B4270D29BE0073FDEA /* ToDoError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D0217F1270B99E0002B6F55 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		9D6786D62708D08200B63802 /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6786D92708D08200B63802 /* TodoeyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoeyApp.swift; sourceTree = "<group>"; };
 		9D6786DB2708D08200B63802 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +57,7 @@
 		9D6787072708D41200B63802 /* ToDoFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFormViewModel.swift; sourceTree = "<group>"; };
 		9D67870B2708D5F300B63802 /* ToDoFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFormView.swift; sourceTree = "<group>"; };
 		9D67870D2708D8CA00B63802 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		9DD715B4270D29BE0073FDEA /* ToDoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0217F0270B99BF002B6F55 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D0217F1270B99E0002B6F55 /* FileManager+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9D6786CD2708D08200B63802 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +116,7 @@
 		9D6786D82708D08200B63802 /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
+				9D0217F0270B99BF002B6F55 /* Extensions */,
 				9D67870F2708DC3F00B63802 /* Views */,
 				9D6786D92708D08200B63802 /* TodoeyApp.swift */,
 				9D6787102708DC4300B63802 /* Models */,
@@ -153,6 +166,7 @@
 			children = (
 				9D67870D2708D8CA00B63802 /* ModalType.swift */,
 				9D6787032708D0C500B63802 /* ToDoModel.swift */,
+				9DD715B4270D29BE0073FDEA /* ToDoError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,10 +311,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D67870C2708D5F300B63802 /* ToDoFormView.swift in Sources */,
+				9D0217F2270B99E0002B6F55 /* FileManager+Extension.swift in Sources */,
 				9D67870E2708D8CA00B63802 /* ModalType.swift in Sources */,
 				9D6786DC2708D08200B63802 /* ContentView.swift in Sources */,
 				9D6786DA2708D08200B63802 /* TodoeyApp.swift in Sources */,
 				9D6787062708D18000B63802 /* DataStore.swift in Sources */,
+				9DD715B5270D29BE0073FDEA /* ToDoError.swift in Sources */,
 				9D6787042708D0C500B63802 /* ToDoModel.swift in Sources */,
 				9D6787082708D41200B63802 /* ToDoFormViewModel.swift in Sources */,
 			);
