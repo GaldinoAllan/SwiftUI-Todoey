@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var dataStore: DataStore
+    @Environment(\.colorScheme) var colorScheme
     @State private var modalType: ModalType? = nil
 
     var body: some View {
@@ -31,13 +32,14 @@ struct ContentView: View {
                 ToolbarItem(placement: .principal) {
                     Text("Todoey")
                         .font(.largeTitle)
-                        .foregroundColor(.red)
+                        .foregroundColor(colorScheme == .light ? .black : .white)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         modalType = .new
                     } label: {
                         Image(systemName: "plus.circle.fill")
+                            .foregroundColor(colorScheme == .light ? .black : .white)
                     }
                 }
             }
