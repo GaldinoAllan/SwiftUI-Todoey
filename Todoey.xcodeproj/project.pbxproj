@@ -12,7 +12,7 @@
 		9D6786DC2708D08200B63802 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786DB2708D08200B63802 /* ContentView.swift */; };
 		9D6786DE2708D08300B63802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6786DD2708D08300B63802 /* Assets.xcassets */; };
 		9D6786E12708D08300B63802 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D6786E02708D08300B63802 /* Preview Assets.xcassets */; };
-		9D6786EB2708D08400B63802 /* TodoeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786EA2708D08400B63802 /* TodoeyTests.swift */; };
+		9D6786EB2708D08400B63802 /* ToDoFormViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786EA2708D08400B63802 /* ToDoFormViewModelTest.swift */; };
 		9D6786F52708D08400B63802 /* TodoeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786F42708D08400B63802 /* TodoeyUITests.swift */; };
 		9D6786F72708D08400B63802 /* TodoeyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6786F62708D08400B63802 /* TodoeyUITestsLaunchTests.swift */; };
 		9D6787042708D0C500B63802 /* ToDoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6787032708D0C500B63802 /* ToDoModel.swift */; };
@@ -48,7 +48,7 @@
 		9D6786DD2708D08300B63802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D6786E02708D08300B63802 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D6786E62708D08400B63802 /* TodoeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D6786EA2708D08400B63802 /* TodoeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoeyTests.swift; sourceTree = "<group>"; };
+		9D6786EA2708D08400B63802 /* ToDoFormViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFormViewModelTest.swift; sourceTree = "<group>"; };
 		9D6786F02708D08400B63802 /* TodoeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D6786F42708D08400B63802 /* TodoeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoeyUITests.swift; sourceTree = "<group>"; };
 		9D6786F62708D08400B63802 /* TodoeyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoeyUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 		9D6786E92708D08400B63802 /* TodoeyTests */ = {
 			isa = PBXGroup;
 			children = (
-				9D6786EA2708D08400B63802 /* TodoeyTests.swift */,
+				9D6786EA2708D08400B63802 /* ToDoFormViewModelTest.swift */,
 			);
 			path = TodoeyTests;
 			sourceTree = "<group>";
@@ -326,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D6786EB2708D08400B63802 /* TodoeyTests.swift in Sources */,
+				9D6786EB2708D08400B63802 /* ToDoFormViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
