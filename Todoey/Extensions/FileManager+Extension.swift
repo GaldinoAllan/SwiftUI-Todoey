@@ -7,7 +7,7 @@
 
 import Foundation
 
-let fileName = "mockAPI.json"
+let mockApiFileName = "mockAPI.json"
 
 extension FileManager {
     static var docDirURL: URL {

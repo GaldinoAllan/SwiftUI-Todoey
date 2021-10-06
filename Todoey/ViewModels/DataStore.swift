@@ -11,8 +11,13 @@ class DataStore: ObservableObject {
     @Published var toDos: [ToDo] = []
     @Published var appError: ErrorType? = nil
 
-    init() {
+    var fileName: String
+
+    init(fileName: String = mockApiFileName) {
         print(FileManager.docDirURL.path) /// printing path to see where the ToDos are being saved
+
+        self.fileName = fileName
+
         if FileManager().docExists(named: fileName) {
             loadToDos()
         }

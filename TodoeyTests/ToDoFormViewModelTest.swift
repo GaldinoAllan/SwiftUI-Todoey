@@ -21,4 +21,25 @@ class ToDoFormViewModelTest: XCTestCase {
         XCTAssertFalse(toDoFormViewModel.updating)
         XCTAssertTrue(toDoFormViewModel.isDisabled)
     }
+
+    func testShouldInitializeToDoFormViewModelForUpdatingUncompleted() {
+        let toDoFormViewModel = ToDoFormViewModel(ToDoModelFactory.getNewToDo(named: "test to do"))
+
+        XCTAssertEqual(toDoFormViewModel.name, "test to do")
+        XCTAssertFalse(toDoFormViewModel.completed)
+        XCTAssertNotNil(toDoFormViewModel.id)
+        XCTAssertTrue(toDoFormViewModel.updating)
+        XCTAssertFalse(toDoFormViewModel.isDisabled)
+    }
+
+    func testShouldInitializeToDoFormViewModelForUpdatingCompleted() {
+        let toDoFormViewModel = ToDoFormViewModel(ToDoModelFactory
+                                                    .getCompletedToDo(named: "test to do"))
+
+        XCTAssertEqual(toDoFormViewModel.name, "test to do")
+        XCTAssertTrue(toDoFormViewModel.completed)
+        XCTAssertNotNil(toDoFormViewModel.id)
+        XCTAssertTrue(toDoFormViewModel.updating)
+        XCTAssertFalse(toDoFormViewModel.isDisabled)
+    }
 }
